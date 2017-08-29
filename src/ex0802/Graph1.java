@@ -17,18 +17,33 @@ public class Graph1 {
 			System.out.println(e);
 		}
 	}
+
 	public static void DrawParabola(int y){
-		for (int k = y; k <1 ; k--){
-			printGraph(k*k);
-		}
+		DrawParabolaBefore(y);
+
 		System.out.println("");
-		for (int j = 1 ; j <= y ; j++ ){
-			printGraph(j*j);
+
+		DrawParabolaAfter(y);
+
+	}
+
+	public static void DrawParabolaBefore(int a){
+		for (int l = a; l < 0; l--){
+			System.out.println(l);
+			printGraph(l * l);
+
+		}
+
+	}
+
+	public static void DrawParabolaAfter(int b){
+		for (int m = 0; m < b ; m++){
+			printGraph(m * m);
 		}
 	}
 
 	public static void printGraph(int x){
-		for (int i =0 ;i<x ; i++){
+		for (int i = 0; i < x; i++){
 			System.out.print("*");
 		}
 		System.out.println("");

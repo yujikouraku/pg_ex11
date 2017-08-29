@@ -10,12 +10,13 @@ public class Youbi {
 		System.out.println("0～6の数字を入力してください。対応した曜日を表示します。");
 		try {
 			String line = reader.readLine();
-			int n =Integer.parseInt(line);
+			int n = Integer.parseInt(line);
 
 			switch(n){
 			case 0:
 				System.out.println("日曜日");
 				break;
+
 			case 1:
 				System.out.println("月曜日");
 				break;
